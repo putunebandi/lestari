@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donasi - Lestari</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-tree-fill me-2"></i>Lestari
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="artikel.html">Artikel</a></li>
+                    <li class="nav-item"><a class="nav-link" href="event.html">Event</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="donasi.html">Donasi</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary-custom ms-3 text-white px-4" href="kontak.html">Kontak
+                            Kami</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-soft py-5 mt-5">
+        <div class="container py-4 text-center">
+            <h1 class="display-5 fw-bold mb-3">Tabungan Oksigen Masa Depan</h1>
+            <p class="lead text-muted mx-auto" style="max-width: 600px;">
+                Setiap Rupiah yang Anda donasikan akan dikonversi menjadi bibit pohon yang menjaga nafas bumi kita.
+            </p>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <span class="badge bg-success mb-2">Aksi Cepat</span>
+                    <h2 class="fw-bold mb-3">Mulai Berdonasi</h2>
+                    <p class="text-muted mb-4">Proses mudah dan transparan. Dukungan Anda akan langsung disalurkan untuk
+                        pembibitan dan perawatan.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-center"><i
+                                class="bi bi-check-circle-fill text-success me-3 fs-5"></i> <span>Min. Donasi Rp
+                                20.000</span></li>
+                        <li class="mb-3 d-flex align-items-center"><i
+                                class="bi bi-check-circle-fill text-success me-3 fs-5"></i> <span>Metode QRIS
+                                Instan</span></li>
+                        <li class="mb-3 d-flex align-items-center"><i
+                                class="bi bi-check-circle-fill text-success me-3 fs-5"></i> <span>Sertifikat Digital
+                                (Email)</span></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="card card-custom p-4 border-0 shadow">
+                        <form id="donation-form">
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <label class="form-label fw-bold">Nominal Donasi (Rp)</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-white fw-bold">Rp</span>
+                                        <input type="number" class="form-control py-2" id="amount"
+                                            placeholder="Contoh: 100000" min="20000" required>
+                                    </div>
+                                    <div class="form-text text-success" id="amount-text">Minimal Rp 20.000</div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold">Tipe Donatur</label>
+                                    <select class="form-select py-2" id="type">
+                                        <option value="Individual">Individual (Pribadi)</option>
+                                        <option value="Organisasi">Organisasi / Komunitas</option>
+                                        <option value="Perusahaan">Perusahaan (CSR)</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold">Nama Lengkap / Instansi</label>
+                                    <input type="text" class="form-control py-2" id="name" required>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold">Email</label>
+                                    <input type="email" class="form-control py-2" id="email" required>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold">No. WhatsApp</label>
+                                    <input type="tel" class="form-control py-2" id="phone" required>
+                                </div>
+
+                                <div class="col-12">
+                                    <label class="form-label fw-bold">Pesan / Harapan</label>
+                                    <textarea class="form-control" id="message" rows="2"
+                                        placeholder="Tulis harapan Anda untuk alam Indonesia..."></textarea>
+                                </div>
+
+                                <div class="col-12 mt-4">
+                                    <button type="submit" class="btn btn-primary-custom w-100 py-3 fw-bold">
+                                        Lanjut Pembayaran <i class="bi bi-qr-code-scan ms-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-soft">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h6 class="text-uppercase text-success fw-bold ls-1">Pahlawan Lingkungan</h6>
+                <h2 class="fw-bold">Top 10 Donatur Terbesar</h2>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card card-custom border-0 shadow-sm">
+                        <div class="card-body p-0">
+                            <div class="list-group list-group-flush" id="leaderboard-list">
+                                <div class="text-center py-4 text-muted">
+                                    <div class="spinner-border text-success spinner-border-sm me-2" role="status"></div>
+                                    Memuat data pahlawan...
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white text-center py-3 border-0">
+                            <small class="text-muted">
+                                <i class="bi bi-heart-fill text-danger me-1"></i>
+                                Terima kasih tak terhingga juga kepada seluruh donatur yang tidak dapat kami sebutkan
+                                satu persatu. Kontribusi Anda sangat berarti.
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-5">Transparansi Dana</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="p-4 rounded-4 border bg-white h-100">
+                        <div class="bg-success bg-opacity-10 p-3 rounded-circle d-inline-block mb-3 text-success">
+                            <i class="bi bi-calendar-check fs-2"></i>
+                        </div>
+                        <h5 class="fw-bold">Siklus 3 Bulan</h5>
+                        <p class="text-muted small">Dana dikumpulkan dan dicairkan setiap 3 bulan sekali (Triwulan)
+                            untuk pembelanjaan bibit massal.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 rounded-4 border bg-white h-100">
+                        <div class="bg-success bg-opacity-10 p-3 rounded-circle d-inline-block mb-3 text-success">
+                            <i class="bi bi-file-earmark-spreadsheet fs-2"></i>
+                        </div>
+                        <h5 class="fw-bold">Bukti Dokumen</h5>
+                        <p class="text-muted small">Kami melampirkan Rekening Koran, Nota Pembelian Bibit, dan Surat
+                            Jalan Logistik secara terbuka.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 rounded-4 border bg-white h-100">
+                        <div class="bg-success bg-opacity-10 p-3 rounded-circle d-inline-block mb-3 text-success">
+                            <i class="bi bi-geo-alt fs-2"></i>
+                        </div>
+                        <h5 class="fw-bold">Geotagging</h5>
+                        <p class="text-muted small">Setiap pohon yang ditanam akan didata koordinat GPS-nya, sehingga
+                            Anda bisa memantau lokasi penanaman.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding pt-0">
+        <div class="container">
+            <div class="card card-custom border-0 shadow p-4">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h4 class="fw-bold mb-0">Laporan Penggunaan Dana</h4>
+                    <button class="btn btn-outline-success btn-sm rounded-pill"><i class="bi bi-download me-1"></i>
+                        Download All</button>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle">
+                        <thead class="table-light">
+                            <tr>
+                                <th scope="col" class="py-3">No</th>
+                                <th scope="col" class="py-3">Tanggal</th>
+                                <th scope="col" class="py-3">Keterangan Pengeluaran</th>
+                                <th scope="col" class="py-3 text-end">Jumlah (Rp)</th>
+                                <th scope="col" class="py-3 text-center">Bukti</th>
+                            </tr>
+                        </thead>
+                        <tbody id="report-table-body">
+                            <tr>
+                                <td colspan="5" class="text-center py-4">Memuat data laporan...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4">
+                    <h4 class="mb-3"><i class="bi bi-tree-fill me-2"></i>Lestari</h4>
+                    <p class="text-secondary">Platform kampanye digital untuk menyuarakan isu sosial dan lingkungan di
+                        Indonesia.</p>
+                </div>
+                <div class="col-lg-2 offset-lg-1">
+                    <h5 class="mb-3">Menu</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-secondary text-decoration-none">Home</a></li>
+                        <li><a href="artikel.html" class="text-secondary text-decoration-none">Artikel</a></li>
+                        <li><a href="event.html" class="text-secondary text-decoration-none">Event</a></li>
+                        <li><a href="donasi.html" class="text-secondary text-decoration-none">Donasi</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="mb-3">Sosial</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-secondary text-decoration-none">Instagram</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">Twitter / X</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="mb-3">Hubungi Kami</h5>
+                    <p class="text-secondary small">Jakarta, Indonesia<br>hello@lestari.id</p>
+                </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="text-center text-secondary small">
+                &copy; 2025 Lestari Campaign. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,302 @@
+[
+    {
+        "id": 1,
+        "title": "Banjir Awal Tahun 2025: Evaluasi Drainase Kota",
+        "category": "Bencana",
+        "date": "2025-01-05",
+        "author": "Dr. Eko Prasetyo",
+        "image": "https://placehold.co/600x400?text=Banjir+Januari",
+        "summary": "Curah hujan tinggi di awal tahun kembali merendam beberapa titik vital. Apa yang salah dengan sistem tata kota kita?",
+        "content": "<p>Hujan deras yang mengguyur sejak malam pergantian tahun menyebabkan genangan di beberapa wilayah cekungan. Ahli hidrologi menyarankan perbaikan segera pada sistem polder.</p>"
+    },
+    {
+        "id": 2,
+        "title": "Resolusi 2025: Gaya Hidup Minim Sampah",
+        "category": "Lingkungan",
+        "date": "2025-01-12",
+        "author": "Sarah Amalia",
+        "image": "https://placehold.co/600x400?text=Zero+Waste",
+        "summary": "Tren gaya hidup zero waste semakin diminati generasi Z di tahun ini. Simak tips memulainya dari rumah.",
+        "content": "<p>Memulai tahun baru dengan kebiasaan baru. Mengurangi penggunaan plastik sekali pakai bukan hanya tren, tapi kebutuhan mendesak bumi.</p>"
+    },
+    {
+        "id": 3,
+        "title": "Tanah Longsor di Jalur Puncak: Alarm Kelestarian Alam",
+        "category": "Bencana",
+        "date": "2025-01-20",
+        "author": "Tim Lestari",
+        "image": "https://placehold.co/600x400?text=Longsor",
+        "summary": "Alih fungsi lahan resapan menjadi villa kembali memakan korban. Perlu ketegasan regulasi tata ruang.",
+        "content": "<p>Bencana longsor kembali terjadi akibat tanah yang jenuh air dan hilangnya akar pohon pengikat tanah. Moratorium pembangunan villa harus ditegakkan.</p>"
+    },
+    {
+        "id": 4,
+        "title": "Inovasi Aspal Plastik di Jalan Protokol",
+        "category": "Lingkungan",
+        "date": "2025-02-05",
+        "author": "Budi Tekno",
+        "image": "https://placehold.co/600x400?text=Aspal+Plastik",
+        "summary": "Pemerintah mulai menguji coba aspal campuran limbah plastik di jalanan ibu kota. Lebih kuat dan ramah lingkungan.",
+        "content": "<p>Limbah kantong kresek kini punya nilai ekonomi. Campuran aspal plastik diklaim lebih tahan beban dan cuaca panas.</p>"
+    },
+    {
+        "id": 5,
+        "title": "Hari Peduli Sampah Nasional 2025",
+        "category": "Sosial",
+        "date": "2025-02-21",
+        "author": "Admin",
+        "image": "https://placehold.co/600x400?text=HPSN+2025",
+        "summary": "Momentum mengingatkan kita tragedi Leuwigajah dan pentingnya memilah sampah dari sumber.",
+        "content": "<p>Peringatan HPSN tahun ini fokus pada pengelolaan sampah organik. Komposting di level rumah tangga menjadi solusi kunci mengurangi beban TPA.</p>"
+    },
+    {
+        "id": 6,
+        "title": "Mengenal 'Carbon Trading' untuk Pemula",
+        "category": "Lingkungan",
+        "date": "2025-03-01",
+        "author": "Rina Ekonomi",
+        "image": "https://placehold.co/600x400?text=Carbon+Trading",
+        "summary": "Bursa karbon Indonesia semakin aktif. Bagaimana masyarakat awam bisa berkontribusi?",
+        "content": "<p>Perdagangan karbon bukan hanya urusan perusahaan besar. Menanam pohon kini bisa dihitung sebagai aset karbon masa depan.</p>"
+    },
+    {
+        "id": 7,
+        "title": "Panen Raya di Tengah Anancaman El Nino",
+        "category": "Sosial",
+        "date": "2025-03-15",
+        "author": "Pak Tani Modern",
+        "image": "https://placehold.co/600x400?text=Panen+Raya",
+        "summary": "Petani di Jawa Tengah sukses panen berkat varietas padi tahan kekeringan.",
+        "content": "<p>Ketahanan pangan nasional diuji. Inovasi bibit unggul menjadi penyelamat para petani dari ancaman gagal panen akibat cuaca tak menentu.</p>"
+    },
+    {
+        "id": 8,
+        "title": "Earth Hour 2025: Gelap untuk Bumi",
+        "category": "Lingkungan",
+        "date": "2025-03-29",
+        "author": "Komunitas Bumi",
+        "image": "https://placehold.co/600x400?text=Earth+Hour",
+        "summary": "Satu jam mematikan lampu, dampak besar bagi penghematan energi global.",
+        "content": "<p>Gerakan simbolis mematikan lampu selama satu jam kembali digelar serentak. Ini adalah pesan visual tentang urgensi perubahan iklim.</p>"
+    },
+    {
+        "id": 9,
+        "title": "Banjir Rob Pantura Semakin Parah",
+        "category": "Bencana",
+        "date": "2025-04-10",
+        "author": "Lestari News",
+        "image": "https://placehold.co/600x400?text=Banjir+Rob",
+        "summary": "Penurunan muka tanah di pesisir utara Jawa membuat air laut semakin jauh masuk ke daratan.",
+        "content": "<p>Desa-desa di pesisir Demak dan Semarang kini permanen tergenang. Solusi tanggul laut raksasa kembali diperbincangkan.</p>"
+    },
+    {
+        "id": 10,
+        "title": "Hari Bumi: Menanam Harapan di Hutan Kota",
+        "category": "Lingkungan",
+        "date": "2025-04-22",
+        "author": "Siti Nurbaya",
+        "image": "https://placehold.co/600x400?text=Hari+Bumi",
+        "summary": "Ribuan relawan menanam pohon serentak di 34 provinsi memperingati Earth Day.",
+        "content": "<p>Tema Hari Bumi 2025 adalah 'Invest in Our Planet'. Penanaman pohon di area urban menjadi langkah nyata menurunkan suhu kota.</p>"
+    },
+    {
+        "id": 11,
+        "title": "Pembangkit Listrik Tenaga Surya di Desa Tertinggal",
+        "category": "Sosial",
+        "date": "2025-05-05",
+        "author": "Dian Sastro",
+        "image": "https://placehold.co/600x400?text=Panel+Surya",
+        "summary": "Cahaya baru bagi warga pedalaman Papua berkat instalasi panel surya mandiri.",
+        "content": "<p>Energi terbarukan menjadi solusi bagi wilayah yang sulit dijangkau PLN. Anak-anak kini bisa belajar di malam hari.</p>"
+    },
+    {
+        "id": 12,
+        "title": "Ancaman Sampah Mikroplastik di Ikan Konsumsi",
+        "category": "Lingkungan",
+        "date": "2025-05-20",
+        "author": "Prof. Laut",
+        "image": "https://placehold.co/600x400?text=Mikroplastik",
+        "summary": "Studi terbaru menunjukkan 80% ikan di pasar tradisional mengandung mikroplastik.",
+        "content": "<p>Apa yang kita buang ke laut akhirnya kembali ke piring kita. Bahaya kesehatan jangka panjang mengintai generasi penerus.</p>"
+    },
+    {
+        "id": 13,
+        "title": "Hari Lingkungan Hidup Sedunia: Stop Plastik",
+        "category": "Lingkungan",
+        "date": "2025-06-05",
+        "author": "Admin",
+        "image": "https://placehold.co/600x400?text=Environment+Day",
+        "summary": "Dunia bersatu menyerukan perjanjian global untuk mengakhiri polusi plastik.",
+        "content": "<p>PBB menggelar sidang untuk meratifikasi perjanjian plastik global. Indonesia berkomitmen mengurangi sampah laut hingga 70%.</p>"
+    },
+    {
+        "id": 14,
+        "title": "Kekeringan Melanda Nusa Tenggara",
+        "category": "Bencana",
+        "date": "2025-06-25",
+        "author": "Tim Lapangan",
+        "image": "https://placehold.co/600x400?text=Kekeringan",
+        "summary": "Warga harus berjalan 5 km untuk mendapatkan air bersih. Krisis air bersih semakin nyata.",
+        "content": "<p>Musim kemarau datang lebih awal. Embung-embung mulai mengering, memaksa warga membeli air tangki dengan harga mahal.</p>"
+    },
+    {
+        "id": 15,
+        "title": "Festival Sungai Bersih 2025",
+        "category": "Sosial",
+        "date": "2025-07-10",
+        "author": "Komunitas Sungai",
+        "image": "https://placehold.co/600x400?text=Festival+Sungai",
+        "summary": "Mengubah wajah sungai kumuh menjadi destinasi wisata air yang asri.",
+        "content": "<p>Warga bantaran sungai membuktikan bahwa dengan gotong royong, sungai kotor bisa menjadi beranda depan rumah yang indah.</p>"
+    },
+    {
+        "id": 16,
+        "title": "Karhutla di Riau: Asap Kembali Datang",
+        "category": "Bencana",
+        "date": "2025-07-28",
+        "author": "Reporter Riau",
+        "image": "https://placehold.co/600x400?text=Kebakaran+Hutan",
+        "summary": "Titik panas (hotspot) terdeteksi meningkat tajam. Tim Manggala Agni berjibaku memadamkan api.",
+        "content": "<p>Lahan gambut yang kering sangat mudah terbakar. Pembukaan lahan dengan cara membakar masih menjadi penyebab utama.</p>"
+    },
+    {
+        "id": 17,
+        "title": "Kemerdekaan Energi: Desa Mandiri Biogas",
+        "category": "Lingkungan",
+        "date": "2025-08-17",
+        "author": "Desa Berdaya",
+        "image": "https://placehold.co/600x400?text=Biogas",
+        "summary": "Merayakan HUT RI dengan kemandirian energi dari limbah ternak sapi.",
+        "content": "<p>Warga desa tidak lagi pusing dengan harga elpiji yang naik. Mereka memasak menggunakan biogas dari kotoran sapi ternak mereka sendiri.</p>"
+    },
+    {
+        "id": 18,
+        "title": "Polusi Udara Jakarta Memburuk",
+        "category": "Bencana",
+        "date": "2025-08-25",
+        "author": "Tim Udara",
+        "image": "https://placehold.co/600x400?text=Polusi+Udara",
+        "summary": "Kualitas udara mencapai level tidak sehat. Warga diimbau menggunakan masker saat beraktivitas luar.",
+        "content": "<p>Kombinasi kemarau panjang, emisi kendaraan, dan industri membuat langit Jakarta kembali kelabu. ISPU menyentuh angka merah.</p>"
+    },
+    {
+        "id": 19,
+        "title": "Penyelamatan Penyu di Pantai Selatan",
+        "category": "Lingkungan",
+        "date": "2025-09-05",
+        "author": "Konservasi Penyu",
+        "image": "https://placehold.co/600x400?text=Tukik",
+        "summary": "Ratusan tukik dilepasliarkan kembali ke laut untuk menjaga ekosistem samudra.",
+        "content": "<p>Penyu adalah penjaga keseimbangan laut. Upaya penetasan semi-alami berhasil menyelamatkan telur dari predator dan pencuri.</p>"
+    },
+    {
+        "id": 20,
+        "title": "Hari Bersih-Bersih Sedunia (World Cleanup Day)",
+        "category": "Sosial",
+        "date": "2025-09-20",
+        "author": "Relawan WCD",
+        "image": "https://placehold.co/600x400?text=WCD+2025",
+        "summary": "Jutaan relawan Indonesia turun ke jalan memungut sampah serentak.",
+        "content": "<p>Aksi gotong royong terbesar di dunia. Indonesia kembali menyumbangkan jumlah relawan terbanyak dalam aksi WCD tahun ini.</p>"
+    },
+    {
+        "id": 21,
+        "title": "Hujan Buatan: Upaya Mengisi Waduk Kritis",
+        "category": "Bencana",
+        "date": "2025-10-02",
+        "author": "BMKG Info",
+        "image": "https://placehold.co/600x400?text=Hujan+Buatan",
+        "summary": "TMC (Teknologi Modifikasi Cuaca) dilakukan untuk menyelamatkan lahan pertanian yang kekeringan.",
+        "content": "<p>Pesawat penebar garam terbang di atas awan potensial untuk memancing hujan turun di area waduk-waduk strategis.</p>"
+    },
+    {
+        "id": 22,
+        "title": "Transisi Musim: Waspada Angin Puting Beliung",
+        "category": "Bencana",
+        "date": "2025-10-25",
+        "author": "BMKG Info",
+        "image": "https://placehold.co/600x400?text=Puting+Beliung",
+        "summary": "Peralihan dari kemarau ke hujan sering memicu cuaca ekstrem. Kenali tanda-tandanya.",
+        "content": "<p>Awan Cumulonimbus pekat berbentuk bunga kol adalah tanda bahaya. Warga diminta menjauhi pohon besar dan baliho.</p>"
+    },
+    {
+        "id": 23,
+        "title": "Hari Pohon Sedunia: Adopsi Pohon Asuh",
+        "category": "Lingkungan",
+        "date": "2025-11-21",
+        "author": "Green Movement",
+        "image": "https://placehold.co/600x400?text=Hari+Pohon",
+        "summary": "Program adopsi pohon memungkinkan warga kota berkontribusi menjaga hutan dari jarak jauh.",
+        "content": "<p>Anda berdonasi, petani lokal yang merawat. Laporan pertumbuhan pohon dikirim digital langsung ke smartphone Anda.</p>"
+    },
+    {
+        "id": 24,
+        "title": "Erupsi Gunung Merapi: Warga Mengungsi",
+        "category": "Bencana",
+        "date": "2025-11-28",
+        "author": "Posko Merapi",
+        "image": "https://placehold.co/600x400?text=Erupsi",
+        "summary": "Aktivitas vulkanik meningkat, guguran awan panas mengarah ke hulu sungai.",
+        "content": "<p>Status siaga ditetapkan. Jalur evakuasi disiapkan dan warga lansia mulai diungsikan ke barak pengungsian yang aman.</p>"
+    },
+    {
+        "id": 25,
+        "title": "Sekolah Alam: Belajar dari Hutan",
+        "category": "Pendidikan",
+        "date": "2025-12-01",
+        "author": "Guru Rimba",
+        "image": "https://placehold.co/600x400?text=Sekolah+Alam",
+        "summary": "Konsep pendidikan alternatif yang mengajak anak mencintai lingkungan sejak dini.",
+        "content": "<p>Tidak ada dinding kelas. Murid belajar matematika dari menghitung daun dan belajar biologi langsung dari ekosistem sungai.</p>"
+    },
+    {
+        "id": 26,
+        "title": "Pameran Kendaraan Listrik Nusantara",
+        "category": "Lingkungan",
+        "date": "2025-12-10",
+        "author": "Otomotif Hijau",
+        "image": "https://placehold.co/600x400?text=Mobil+Listrik",
+        "summary": "Menuju Indonesia bebas emisi dengan percepatan adopsi motor dan mobil listrik.",
+        "content": "<p>Berbagai insentif ditawarkan pemerintah untuk menarik minat masyarakat beralih ke kendaraan listrik yang lebih bersih.</p>"
+    },
+    {
+        "id": 27,
+        "title": "Relawan Muda Tanggap Bencana",
+        "category": "Sosial",
+        "date": "2025-12-15",
+        "author": "BNPB",
+        "image": "https://placehold.co/600x400?text=Relawan",
+        "summary": "Pelatihan kesiapsiagaan bencana bagi pemuda karang taruna menghadapi puncak musim hujan.",
+        "content": "<p>Membentuk masyarakat tangguh bencana dimulai dari pemudanya. Mereka dilatih teknik evakuasi dan pertolongan pertama.</p>"
+    },
+    {
+        "id": 28,
+        "title": "Refleksi Akhir Tahun: Kondisi Hutan Kita",
+        "category": "Lingkungan",
+        "date": "2025-12-20",
+        "author": "Walhi",
+        "image": "https://placehold.co/600x400?text=Hutan+Indonesia",
+        "summary": "Data deforestasi tahun 2025 menunjukkan tren penurunan, namun tantangan masih ada.",
+        "content": "<p>Kabar baik dari sektor kehutanan, namun ancaman tambang ilegal masih membayangi kawasan konservasi di luar Jawa.</p>"
+    },
+    {
+        "id": 29,
+        "title": "Liburan Ramah Lingkungan (Ecotourism)",
+        "category": "Sosial",
+        "date": "2025-12-25",
+        "author": "Traveler Bijak",
+        "image": "https://placehold.co/600x400?text=Ecotourism",
+        "summary": "Mengisi liburan akhir tahun dengan mengunjungi desa wisata dan meminimalisir jejak karbon.",
+        "content": "<p>Berlibur tidak harus merusak alam. Ekowisata menawarkan pengalaman otentik menyatu dengan alam dan budaya lokal.</p>"
+    },
+    {
+        "id": 30,
+        "title": "Harapan Hijau 2026",
+        "category": "Sosial",
+        "date": "2025-12-31",
+        "author": "Redaksi Lestari",
+        "image": "https://placehold.co/600x400?text=New+Year+2026",
+        "summary": "Menutup tahun dengan komitmen baru untuk menjaga ibu pertiwi lebih baik lagi.",
+        "content": "<p>Tahun 2025 memberikan banyak pelajaran tentang keseimbangan alam. Mari sambut 2026 dengan aksi nyata, bukan sekadar wacana.</p>"
+    }
+]

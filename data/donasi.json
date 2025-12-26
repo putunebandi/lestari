@@ -1,0 +1,38 @@
+{
+    "donors": [
+        { "name": "PT. Hijau Abadi", "type": "Perusahaan", "amount": 5000000, "date": "2024-12-01" },
+        { "name": "Budi Santoso", "type": "Individual", "amount": 1000000, "date": "2024-12-05" },
+        { "name": "Komunitas Sepeda JKT", "type": "Organisasi", "amount": 2500000, "date": "2024-12-10" },
+        { "name": "Siti Aminah", "type": "Individual", "amount": 500000, "date": "2024-12-12" },
+        { "name": "CV. Karya Kayu", "type": "Perusahaan", "amount": 1500000, "date": "2024-12-15" },
+        { "name": "Rizki Wahyu", "type": "Individual", "amount": 2000000, "date": "2024-12-18" },
+        { "name": "Andi & Keluarga", "type": "Individual", "amount": 300000, "date": "2024-12-20" },
+        { "name": "Yayasan Peduli", "type": "Organisasi", "amount": 1000000, "date": "2024-12-22" },
+        { "name": "Anonim", "type": "Individual", "amount": 50000, "date": "2024-12-23" },
+        { "name": "Dewi Sartika", "type": "Individual", "amount": 100000, "date": "2024-12-24" },
+        { "name": "Fajar Nugraha", "type": "Individual", "amount": 25000, "date": "2024-12-25" }
+    ],
+    "reports": [
+        {
+            "no": 1,
+            "date": "2024-10-01",
+            "description": "Pencairan Dana Triwulan III (Pembelian 500 Bibit Mahoni)",
+            "amount": 7500000,
+            "link": "#"
+        },
+        {
+            "no": 2,
+            "date": "2024-10-05",
+            "description": "Biaya Operasional Tanam & Pupuk Organik",
+            "amount": 2000000,
+            "link": "#"
+        },
+        {
+            "no": 3,
+            "date": "2025-01-01",
+            "description": "Pencairan Dana Triwulan IV (Rencana Tanam Bakau)",
+            "amount": 15000000,
+            "link": "#"
+        }
+    ]
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Artikel - Lestari</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-tree-fill me-2"></i>Lestari
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="artikel.html">Artikel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="event.html">Event</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="donasi.html">Donasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary-custom ms-3 text-white px-4" href="kontak.html">Kontak
+                            Kami</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section-padding mt-5">
+        <div class="container">
+
+            <div class="row mb-4">
+                <div class="col-lg-8 offset-lg-2">
+                    <a href="artikel.html" class="text-decoration-none text-muted small">
+                        <i class="bi bi-arrow-left me-1"></i> Kembali ke Daftar Artikel
+                    </a>
+                </div>
+            </div>
+
+            <div class="row" id="article-detail-container">
+                <div class="col-lg-8 offset-lg-2">
+
+                    <span class="badge bg-primary mb-3" id="detail-category">Kategori</span>
+                    <h1 class="fw-bold mb-3 display-5" id="detail-title">Memuat Judul...</h1>
+
+                    <div class="d-flex align-items-center text-muted mb-4 small">
+                        <i class="bi bi-person-circle me-2"></i> <span id="detail-author" class="me-3">Penulis</span>
+                        <i class="bi bi-calendar me-2"></i> <span id="detail-date">Tanggal</span>
+                    </div>
+
+                    <img src="" id="detail-image" class="img-fluid rounded-4 mb-5 w-100 shadow-sm" alt="Detail Image"
+                        style="display: none;">
+
+                    <div class="article-content fs-5" id="detail-content" style="line-height: 1.8; color: #444;">
+                        <p class="text-center text-muted py-5">Sedang mengambil data artikel...</p>
+                    </div>
+
+                    <div class="border-top mt-5 pt-4">
+                        <p class="small fw-bold text-muted">Bagikan artikel ini:</p>
+                        <button class="btn btn-sm btn-outline-success me-2 rounded-pill"><i class="bi bi-whatsapp"></i>
+                            WhatsApp</button>
+                        <button class="btn btn-sm btn-outline-primary me-2 rounded-pill"><i class="bi bi-twitter"></i>
+                            Twitter</button>
+                        <button class="btn btn-sm btn-outline-secondary me-2 rounded-pill"><i class="bi bi-link"></i>
+                            Salin Link</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4">
+                    <h4 class="mb-3"><i class="bi bi-tree-fill me-2"></i>Lestari</h4>
+                    <p class="text-secondary">Platform kampanye digital untuk menyuarakan isu sosial dan lingkungan di
+                        Indonesia.</p>
+                </div>
+                <div class="col-lg-2 offset-lg-1">
+                    <h5 class="mb-3">Menu</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-secondary text-decoration-none">Home</a></li>
+                        <li><a href="artikel.html" class="text-secondary text-decoration-none">Artikel</a></li>
+                        <li><a href="event.html" class="text-secondary text-decoration-none">Event</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="mb-3">Sosial</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-secondary text-decoration-none">Instagram</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">Twitter / X</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="mb-3">Hubungi Kami</h5>
+                    <p class="text-secondary small">Jakarta, Indonesia<br>hello@lestari.id</p>
+                </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="text-center text-secondary small">
+                &copy; 2023 Lestari Campaign. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
