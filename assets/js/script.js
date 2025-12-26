@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', function () {
     let allArticlesData = [];
     let allEventsData = [];
 
+    setupGlobalShareSystem();
+
     const homeContainer = document.getElementById('home-articles-container');
     if (homeContainer) fetchHomeArticles(articlesUrl, homeContainer);
 
@@ -25,6 +27,69 @@ document.addEventListener('DOMContentLoaded', function () {
     if (leaderboardContainer) {
         fetchDonationData(donationsUrl);
         setupDonationForm();
+    }
+
+    function setupGlobalShareSystem() {
+        const btnWa = document.getElementById('btn-share-wa');
+        const btnTw = document.getElementById('btn-share-tw');
+        const btnCopy = document.getElementById('btn-share-copy');
+
+        if (btnWa) {
+            btnWa.addEventListener('click', () => {
+                const title = document.title;
+                const url = window.location.href;
+                const waUrl = `https://wa.me/?text=${encodeURIComponent(title)}%20${encodeURIComponent(url)}`;
+                window.open(waUrl, '_blank');
+            });
+        }
+        if (btnTw) {
+            btnTw.addEventListener('click', () => {
+                const title = document.title;
+                const url = window.location.href;
+                const twUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(url)}`;
+                window.open(twUrl, '_blank');
+            });
+        }
+        if (btnCopy) {
+            btnCopy.addEventListener('click', () => {
+                const title = document.title;
+                const url = window.location.href;
+                const textToCopy = `${title}\n${url}`;
+                copyToClipboard(textToCopy);
+            });
+        }
+
+        const btnShareEvent = document.getElementById('share-btn');
+        if (btnShareEvent) {
+            btnShareEvent.addEventListener('click', (e) => {
+                e.preventDefault();
+                const title = document.title;
+                const url = window.location.href;
+                const textToCopy = `${title}\n${url}`;
+                copyToClipboard(textToCopy);
+            });
+        }
+    }
+
+    function copyToClipboard(text) {
+        navigator.clipboard.writeText(text).then(() => {
+            if (typeof Swal !== 'undefined') {
+                const Toast = Swal.mixin({
+                    toast: true,
+                    position: 'top-end',
+                    showConfirmButton: false,
+                    timer: 3000,
+                    timerProgressBar: true,
+                    didOpen: (toast) => {
+                        toast.addEventListener('mouseenter', Swal.stopTimer)
+                        toast.addEventListener('mouseleave', Swal.resumeTimer)
+                    }
+                });
+                Toast.fire({ icon: 'success', title: 'Tautan berhasil disalin!' });
+            } else {
+                alert('Tautan berhasil disalin!');
+            }
+        }).catch(err => console.error(err));
     }
 
     async function fetchHomeArticles(url, container) {
@@ -117,33 +182,7 @@ document.addEventListener('DOMContentLoaded', function () {
     async function loadEventDetail(url) {
         const urlParams = new URLSearchParams(window.location.search);
         const id = urlParams.get('id');
-        const btnShare = document.getElementById('share-btn');
-        if (btnShare) {
-            btnShare.addEventListener('click', function () {
-                navigator.clipboard.writeText(window.location.href);
-                const Toast = Swal.mixin({
-                    toast: true,
-                    position: 'top-end',
-                    showConfirmButton: false,
-                    timer: 3000,
-                    timerProgressBar: true,
-                    background: '#fff',
-                    color: '#333',
-                    iconColor: '#2E7D32',
-                    didOpen: (toast) => {
-                        toast.onmouseenter = Swal.stopTimer;
-                        toast.onmouseleave = Swal.resumeTimer;
-                    },
-                    customClass: {
-                        popup: 'shadow-sm rounded-4'
-                    }
-                });
-                Toast.fire({
-                    icon: 'success',
-                    title: 'Tautan berhasil disalin!'
-                });
-            });
-        }
+
         if (!id) return;
         try {
             const response = await fetch(url);
@@ -219,7 +258,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
             reportBody.innerHTML = reportHTML;
         } catch (error) {
-            console.error('Error loading donation data:', error);
+            console.error(error);
         }
     }
 
@@ -228,20 +267,31 @@ document.addEventListener('DOMContentLoaded', function () {
         const amountInput = document.getElementById('amount');
         const amountText = document.getElementById('amount-text');
 
+        if (!form || !amountInput) return;
+
         amountInput.addEventListener('input', function () {
-            if (this.value < 20000) {
-                amountText.classList.replace('text-success', 'text-danger');
-                amountText.innerText = "Minimal donasi Rp 20.000 ya kak :)";
+            let rawValue = this.value.replace(/\D/g, '');
+            if (rawValue !== '') {
+                this.value = new Intl.NumberFormat('id-ID').format(rawValue);
             } else {
-                amountText.classList.replace('text-danger', 'text-success');
-                amountText.innerText = "Nominal yang luar biasa!";
+                this.value = '';
+            }
+            if (amountText) {
+                if (parseInt(rawValue) < 20000) {
+                    amountText.classList.replace('text-success', 'text-danger');
+                    amountText.innerText = "Minimal donasi Rp 20.000 ya kak :)";
+                } else {
+                    amountText.classList.replace('text-danger', 'text-success');
+                    amountText.innerText = "Nominal yang luar biasa!";
+                }
             }
         });
 
         form.addEventListener('submit', function (e) {
             e.preventDefault();
-            const amount = parseInt(amountInput.value);
-            const donorName = document.getElementById('name').value;
+            const cleanValue = amountInput.value.replace(/\./g, '');
+            const amount = parseInt(cleanValue) || 0;
+            const donorName = document.getElementById('name') ? document.getElementById('name').value : 'Hamba Allah';
 
             if (amount < 20000) {
                 Swal.fire('Oops', 'Minimal donasi Rp 20.000 ya.', 'warning');
