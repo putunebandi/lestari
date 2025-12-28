@@ -52,7 +52,7 @@ lestari/
 │   │   └── style.css       # Custom CSS
 │   ├── js/
 │   │   └── script.js       # Logika Utama
-│   ├── img/                # Aset Gambar
+│   ├── images/             # Aset Gambar
 │   └── documents/          # File Dokumen Laporan
 ├── data/
 │   ├── articles.json       # Database Artikel
