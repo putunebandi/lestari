@@ -18,21 +18,21 @@
             "date": "2024-10-01",
             "description": "Pencairan Dana Triwulan III (Pembelian 500 Bibit Mahoni)",
             "amount": 7500000,
-            "link": "#"
+            "link": "assets/documents/bukti_pencairan_q3.pdf"
         },
         {
             "no": 2,
             "date": "2024-10-05",
             "description": "Biaya Operasional Tanam & Pupuk Organik",
             "amount": 2000000,
-            "link": "#"
+            "link": "assets/documents/bukti_operasional_tanam.pdf"
         },
         {
             "no": 3,
             "date": "2025-01-01",
             "description": "Pencairan Dana Triwulan IV (Rencana Tanam Bakau)",
             "amount": 15000000,
-            "link": "#"
+            "link": "assets/documents/bukti_pencairan_q4.pdf"
         }
     ]
 }
