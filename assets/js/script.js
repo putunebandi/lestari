@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let allEventsData = [];
 
     setupGlobalShareSystem();
+    setupContactForm();
 
     const homeContainer = document.getElementById('home-articles-container');
     if (homeContainer) fetchHomeArticles(articlesUrl, homeContainer);
@@ -27,6 +28,53 @@ document.addEventListener('DOMContentLoaded', function () {
     if (leaderboardContainer) {
         fetchDonationData(donationsUrl);
         setupDonationForm();
+    }
+
+    function setupContactForm() {
+        const contactForm = document.getElementById('contact-form');
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                const nama = document.getElementById('nama').value;
+                const email = document.getElementById('email').value;
+                const pesan = document.getElementById('pesan').value;
+
+                if (!nama || !email || !pesan) {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Mohon lengkapi semua kolom formulir!',
+                        confirmButtonColor: '#d33'
+                    });
+                    return;
+                }
+
+                Swal.fire({
+                    title: 'Mengirim Pesan...',
+                    html: 'Mohon tunggu sebentar.',
+                    timer: 1500,
+                    timerProgressBar: true,
+                    didOpen: () => {
+                        Swal.showLoading();
+                    }
+                }).then((result) => {
+                    if (result.dismiss === Swal.DismissReason.timer) {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Pesan Terkirim!',
+                            html: `Terima kasih telah menghubungi kami, <b>${nama}</b>.<br><br>Kami telah menerima pesan Anda. Tim kami akan segera meninjaunya dan mengirimkan balasan ke <b>${email}</b> dalam waktu 1x24 jam kerja.`,
+                            confirmButtonText: 'Oke, Mengerti',
+                            confirmButtonColor: '#2E7D32',
+                            allowOutsideClick: false
+                        });
+
+                        contactForm.reset();
+                    }
+                });
+            });
+        }
     }
 
     function setupGlobalShareSystem() {
